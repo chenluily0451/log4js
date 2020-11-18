@@ -44,3 +44,5 @@
 [2020-11-18T14:45:24.473] [ERROR] default - 参数个数：5个参数1：Uncaught ReferenceError: error is not defined参数2：http://localhost:1314/index.html参数3：45参数4：4参数5：ReferenceError: error is not defined: 出错了
 [2020-11-18T14:46:23.151] [ERROR] default - 参数个数：5个参数1：Uncaught ReferenceError: error is not defined参数2：http://localhost:1314/index.html参数3：45参数4：4参数5：ReferenceError: error is not defined: 出错了
 [2020-11-18T14:49:29.548] [ERROR] default - 参数个数：5个参数1：Uncaught ReferenceError: error is not defined参数2：http://localhost:1314/index.html参数3：45参数4：4参数5：ReferenceError: error is not defined: 出错了
+[2020-11-18T16:43:32.419] [ERROR] default - 参数个数：5个参数1：Uncaught ReferenceError: error is not defined参数2：file:///Users/chenlu/myplace/log4jsTest/index.html参数3：45参数4：4参数5：ReferenceError: error is not defined: 出错了
+[2020-11-18T16:43:35.514] [ERROR] default - 参数个数：5个参数1：Uncaught ReferenceError: error is not defined参数2：file:///Users/chenlu/myplace/log4jsTest/index.html参数3：45参数4：4参数5：ReferenceError: error is not defined: 出错了
