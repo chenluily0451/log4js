@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript" src = 'https://libs.baidu.com/jquery/2.0.0/jquery.min.js'></script>
+    <script>
+        window.onerror = function () {
+			let arglen = arguments.length;
+			var errorMsg = "参数个数：" + arglen + "个\n";
+			for (var i = 0; i < arglen; i++) {
+				errorMsg += "参数" + (i + 1) + "：" + arguments[i]+"\n"
+			}
+			console.info(errorMsg);
+
+			$.ajax({
+                url: 'http://localhost:3080/warn?msg=' + errorMsg,
+                type: 'GET',
+                success:function () {
+                    console.log('发送成功')
+				}
+            })
+			$.ajax({
+				url: 'http://localhost:3080/requestError',
+				type: 'GET',
+				success:function (res) {
+					console.log(res)
+					$.ajax({
+						url: 'http://localhost:3080/error?msg=' + '某某接口出错了' + res.message,
+						type: 'GET',
+						success:function () {
+							console.log('发送成功')
+						}
+					})
+				}
+			});
+
+			window.onerror=null;
+			return true;
+		}
+
+		function test(){
+			error
+		}
+		test()
+    </script>
+</body>
+</html>
